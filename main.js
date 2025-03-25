@@ -73,15 +73,38 @@
 // console.log(Math.max(-100,100,0))
 
 
-function run(object) {
-    var Array=[];
-    var i=0;
-    for(var key in object){
-        Array[i]=`Thuộc tính ${key} có giá trị ${object[key]}`
-        i++;
-    }
-    return Array;
-}
+// function run(object) {
+//     var Array=[];
+//     var i=0;
+//     for(var key in object){
+//         Array[i]=`Thuộc tính ${key} có giá trị ${object[key]}`
+//         i++;
+//     }
+//     return Array;
+// }
 
-// Expected results:
-console.log(run({ name: 'Nguyen Van A', age: 16 }));
+// // Expected results:
+// console.log(run({ name: 'Nguyen Van A', age: 16 }));
+
+
+// function myFunction(param){
+//     if(typeof param==="function"){
+//         param("hoc lap trinh");
+//     }
+// }
+
+// function myCallBack(value){
+//     console.log("value: ",value)
+// }
+
+// myFunction(myCallBack);
+
+
+// var courses=["1a","2a","3a"]
+
+// courses.forEach(function(courses,index,array){
+//     console.log(courses,index,array)
+// },)
+
+var headingNode=document.querySelectorAll('.box li')
+console.log(headingNode)
