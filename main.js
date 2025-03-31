@@ -190,8 +190,104 @@
 // inputElement.onchange=function(e){
 //     console.log(e.target.checked)
 // }
-var inputElement=document.querySelector('select')
-inputElement.onchange=function(e){
-    console.log(e.target.value)
-}
+// var inputElement=document.querySelector('select')
+// inputElement.onchange=function(e){
+//     console.log(e.target.value)
+// }
 
+
+// JSON******************************************************************************
+// var json1='["so1","so2"]';
+// var json='{"name":"minh","age":18}'
+// console.log(JSON.parse(json1))
+// console.log(JSON.stringify(1))
+
+
+// promise***************************************************************************
+// bat dong bo: setTimeout, setInterval, fetch, XMLHttpRequest, file reading, request animation frame
+// setTimeout(function(){
+//     console.log(1);
+// },1000)
+// console.log(2)
+
+
+// var promise = new Promise(
+//     // executor
+//     function(resolve,reject){
+//         // thanh cong: resolve(), that bai: reject()
+//         // phai goi 1 trong 2 
+//         resolve({
+//         })
+//     }
+// );
+
+// promise
+//     // .then(function(){
+//     //     // goi khi resolve()
+//     //     console.log("thanh cong")
+//     // })
+//     // .catch(function(){
+//     //     // goi khi reject()
+//     //     console.log("that bai")
+//     // })
+//     // .finally(function(){
+//     //     // goi khi resolve() hoac reject()
+//     //     console.log("xong")
+//     // })
+
+//     // .then(function(){
+//     //     return 1;
+//     // })
+//     // .then(function(data){
+//     //     console.log(data)
+//     //     return 2;
+//     // })
+//     // .then(function(data){
+//     //     console.log(data)
+//     //     return 3;
+//     // })
+
+//     // .then(function(){
+//     //     console.log(1)
+//     // })
+//     // .then(function(){
+//     //     return new Promise((resolve, reject) => {
+//     //         reject("co loi")
+//     //     });
+//     // })
+//     // .then(function(){
+//     //     console.log(3)
+//     // })
+//     // .catch(function(error){
+//     //     console.log(error);
+//     // })
+
+
+// Fetch*******************************************************************************
+// var portApi='https://jsonplaceholder.typicode.com/posts'
+// fetch(portApi)
+//     .then(function(response){   
+//         return response.json()
+//     })
+//     .then(function(posts){
+//         var htmls = posts.map(function(post){
+//             return `<li>
+//             <h2>${post.title}</h2>
+//             <p>${post.body}</p>
+//             </li>`
+//         })
+//         var html=htmls.join('')
+//         document.getElementById('post-block').innerHTML=html
+//     })
+
+
+// JSON Server*************************************************************************
+var coursesApi='http://localhost:3000/courses'
+
+fetch(coursesApi)
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(courses){
+        console.log(courses)
+    })

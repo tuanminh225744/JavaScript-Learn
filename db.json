@@ -1,0 +1,29 @@
+{
+  "courses": [
+    {
+      "id": "2",
+      "name": "Xây dựng web với NodeJS",
+      "description": "Xây dựng web trong thực tế với NodeJS"
+    },
+    {
+      "id": "3",
+      "name": "Xây dựng web với NodeJS1",
+      "description": "Xây dựng web trong thực tế với NodeJS1"
+    },
+    {
+      "id": "1",
+      "name": "Xây dựng web với NodeJS1",
+      "description": "Xây dựng web trong thực tế với NodeJS1"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
