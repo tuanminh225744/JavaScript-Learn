@@ -282,12 +282,61 @@
 
 
 // JSON Server*************************************************************************
-var coursesApi='http://localhost:3000/courses'
+// var coursesApi='http://localhost:3000/courses'
 
-fetch(coursesApi)
-    .then(function(response){
-        return response.json()
-    })
-    .then(function(courses){
-        console.log(courses)
-    })
+// fetch(coursesApi)
+//     .then(function(response){
+//         return response.json()
+//     })
+//     .then(function(courses){
+//         console.log(courses)
+//     })
+
+
+// class********************************************************************************
+// class Course{
+//     constructor(id,name,price){
+//         this.id=id
+//         this.name=name
+//         this.price=price
+//     }
+//     getName(){
+//         return this.name;
+//     }
+
+//     getPrice(){
+//         return this.price;
+//     }
+// }
+
+
+// gia tri mac dinh********************************************************************
+// function logger(log="gia tri mac dinh"){
+//     console.log(log);
+// }
+// logger();
+
+
+// phan ra*****************************************************************************
+// var array = ['javascript', 'PHP', 'Ruby'];
+// var [a, b, c] = array;
+// console.log(a, b, c);
+// var [d, , e] = array;
+// console.log(d, e);
+// // ...rest lay ra phan con lai
+// var [f, ...rest] = array;
+// console.log(rest);
+
+// var courses = {
+//     Name: "javascript",
+//     price: 1000
+// };
+
+// // Corrected destructuring to match property names
+// var { Name, price } = courses;
+// console.log(Name, price);
+
+
+// module*********************************************************************************
+import logger from  './logger.js'
+logger('hello')
